@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Img</title>
+    <style>
+        div{
+            height: 300px;
+            padding: 20px;
+            border: solid 20px crimson;
+            margin: 10px 0;
+        }
+        .bgcolor{
+            background-color: aqua;
+        }
+        .Backgroundimg{
+            background-image: url(../HTML/img/Vishvkarma.jpg);
+        }
+        .backgroundposition{
+            background-image: url(../HTML/img/Vishvkarma.jpg);
+            background-position: right;
+            background-repeat: no-repeat;
+        }
+        .Backat{
+            background-image: url(../HTML/img/Vishvkarma.jpg);
+            background-attachment: fixed;
+        }
+        .backgroundrepeat{
+            background-image: url(../HTML/img/Vishvkarma.jpg);
+            background-repeat: no-repeat;
+            /*background-repeat: repeat-x; (use this if you need to img repeat horizontal) */
+            /*background-repeat: repeat-y; (use this if you need to img repeat vartical)*/
+        }
+        .backgroundsize{
+            background-image: url(../HTML/img/Vishvkarma.jpg);
+            background-repeat: no-repeat;
+            /*background-size: cover; (img fully cover your document) */ 
+            background-size: contain; /* img set as verticaly as per your document*/
+        }
+        .backclip{
+            background-image: url(../HTML/img/Vishvkarma.jpg);
+            background-repeat: no-repeat;
+            background-clip: content-box;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bgcolor"> <b>Background color</b> </div>
+    <div class="Backgroundimg"><b>Background Img</b> </div>
+    <div class="backgroundposition"> <b>Background Position</b> </div>
+    <div class="Backat"><b>Background Attachment</b></div>
+    <div class="backgroundrepeat"><b>Background Repeat</b></div>
+    <div class="backgroundsize"><b>Background Size</b></div>
+    <div class="backclip"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum porro nostrum tempora eaque, doloremque neque eligendi odio nulla numquam perferendis expedita voluptas facilis non deleniti quisquam, aspernatur excepturi culpa consectetur. </div>
+</body>
+</html>
