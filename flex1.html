@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex1</title>
+    <style>
+        .file {
+            background-color: aqua;
+            border: 5px solid;
+            width: fit-content;
+            padding: 5px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .col-50 {
+            width: 50%;
+        }
+
+        img {
+            height: 270px;
+        }
+
+        .div {
+            width: 50%;
+            border: 5px solid coral;
+        }
+
+        .text {
+            width: 80%;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="file">
+            <img src="../HTML/img/Vishvkarma.jpg" alt="">
+            <img height="225px" width="225px" src="../HTML/img/Frontpage/dog.jpg" alt="">
+            <div class="bg">
+                <img src="../HTML/img/Vishvkarma.jpg" alt="">
+                <img src="../HTML/img/Vishvkarma.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="div">
+        <h2>Welcome</h2>
+        <div class="row">
+
+            <div class="col-50">
+                <div class="text">
+                <img src="../HTML/img/Vishvkarma.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, iure.</p>
+                </div>
+            </div>
+            <div class="col-50">
+                <div class="text">
+
+                    <img src="../HTML/img/Vishvkarma.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quo.</p>
+
+                </div>
+            </div>
+
+            <div class="col-50">
+                <div class="text">
+                    <img src="../HTML/img/Vishvkarma.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quo.</p>
+                </div>
+            </div>
+            <div class="col-50">
+                <div class="text">
+                    <img src="../HTML/img/Vishvkarma.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quo.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
