@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+
+    <style>
+        .container{
+            background-color: rgb(255, 255, 255);
+            border: 1px solid rgb(196, 165, 125);
+            padding: 10px;
+            font-size: 25px;
+            color: blueviolet;
+            display:grid;
+            column-gap: 10px;
+            grid-template-columns: 1fr 1fr 100px;
+            grid-template-rows: 100px 100px 300px 300px 100px  ;
+            grid-auto-rows: minmax(100px, auto);
+            height: 1000px;
+            row-gap: 10px;
+        }
+        .item{
+            background-color: bisque;
+            border: 1px solid whitesmoke;
+            text-align: center;
+            text-shadow: rgb(248, 72, 72) 5px 2px 2px;
+            font-size: 50px;
+        }
+        #img1{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            background-color: rgba(93, 180, 97, 0.945);
+        }
+        #img2{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            background-color: rgb(114, 30, 210);
+        }
+        #img3{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            background-color: rgb(228, 95, 175);
+        }
+        #img4{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 5;
+            background-color: darkolivegreen;
+        }
+        #img6{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            background-color: crimson;
+        }
+        #img5{
+            background-color: chartreuse;
+        }
+
+    </style>
+    
+</head>
+<body>
+
+    <div class="container">
+        <div class="item" id="img1">Header</div>
+        <div class="item" id="img2">Navbar</div>
+        <div class="item" id="img3">Section</div>
+        <div class="item" id="img4">Option</div>
+        <div class="item" id="img5">Menu</div>
+        <div class="item" id="img6">Footer</div>
+    </div>
+    
+</body>
+</html>
